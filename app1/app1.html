@@ -1,0 +1,17 @@
+<head>
+  <title>app1</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> remoteTasks}}
+</body>
+
+<template name="remoteTasks">
+  <div>
+  {{#each tasks}}
+    <div>{{name}}</div>
+  {{/each}}
+  </div>
+</template>
